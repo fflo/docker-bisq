@@ -71,9 +71,11 @@ if [ -f $file ]
                     fi
                     if [ ! -r /home/$username/Desktop/Bisq.desktop ]
                       then
-                        echo "#!/usr/bin/env xdg-open" > /home/$username/Desktop/Bisq.desktop
+                        install    -o $username -g $username -m 755 \
+                                                /dev/null /home/$username/Desktop/Bisq.desktop
+                        echo "#!/usr/bin/env xdg-open" >> /home/$username/Desktop/Bisq.desktop
                         cat /usr/share/applications/Bisq.desktop \
-                                                      >> /home/$username/Desktop/Bisq.desktop
+                                                       >> /home/$username/Desktop/Bisq.desktop
                     fi
                 fi
             fi
