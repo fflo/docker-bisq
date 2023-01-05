@@ -73,9 +73,9 @@ To start a _Bisq on Docker_ instance running the latest version:
 $ docker run fflo/bisq-on-docker
 ```
 
-_Bisq on Docker_ provides different tags so that you can specify the exact version you wish to run. For example, to selectively run version 1.5.4:
+_Bisq on Docker_ provides different tags so that you can specify the exact version you wish to run. For example, to selectively run version 1.9.8:
 ```
-$ docker run fflo/bisq-on-docker:1.5.4
+$ docker run fflo/bisq-on-docker:1.9.8
 ```
 
 To run a _Bisq on Docker_ container in the background, pass the `-d` option to `docker run`, and give your container a name for easy reference later:
