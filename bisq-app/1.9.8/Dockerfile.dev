@@ -1,4 +1,4 @@
-FROM fflo/bisq-on-docker:base
+FROM fflo/bisq-on-docker:base-dev
 
 WORKDIR /opt
 
