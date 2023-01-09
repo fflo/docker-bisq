@@ -1,8 +1,8 @@
-FROM fflo/bisq-on-docker:base-dev
+FROM fflo/bisq-on-docker:base
 
 WORKDIR /opt
 
-ARG BISQ_VERSION=1.9.8
+ARG BISQ_VERSION=1.9.9
 ENV BISQ_DEBFILE Bisq-64bit-$BISQ_VERSION.deb
 ENV BISQ_DOL_URL https://bisq.network/downloads/v$BISQ_VERSION/$BISQ_DEBFILE
 ENV BISQ_ASC_URL https://bisq.network/downloads/v$BISQ_VERSION/$BISQ_DEBFILE.asc
