@@ -26,6 +26,10 @@ RUN mkdir -p /usr/share/backgrounds/unsplash \
                && glib-compile-schemas /usr/share/glib-2.0/schemas/ ; \ 
        fi
 
+# bugfix install wrapper
+COPY libasound2t64_1.0_all.deb /opt
+RUN dpkg -i /opt/libasound2t64_1.0_all.deb
+
 # install bisq
 RUN mkdir bisq-install && cd bisq-install \
     && wget -qO $BISQ_DEBFILE "$BISQ_DOL_URL" \
