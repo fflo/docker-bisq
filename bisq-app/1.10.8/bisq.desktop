@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/opt/bisq/bin/Bisq
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[C]=Bisq
+Name=Bisq
+Comment[C]=Bisq
+Comment=Bisq
+X-MATE-Autostart-Delay=3
